@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perzal - Librería y Útiles</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+
+            <div class="logo">
+                <img src="images/logo_perzal.png" alt="Logo Perzal">
+                Perzal
+            </div>
+            
+
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar productos">
+            </div>
+            <div class="header-actions">
+                <button class="btn" id="loginBtn">Iniciar Sesión</button>
+                <button class="icon-btn" id="userBtn" style="display:none;">👤</button>
+                <button class="icon-btn" id="cartBtn">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link active">INICIO</a></li>
+            <li><a href="#category/arte-diseno" class="nav-link">ARTE Y DISEÑO</a></li>
+            <li><a href="#category/utiles" class="nav-link">ÚTILES</a></li>
+            <li><a href="#category/editorial" class="nav-link">EDITORIAL</a></li>
+            <li><a href="#category/mochilas" class="nav-link">MOCHILAS Y LONCHERAS</a></li>
+            <li><a href="#category/bazar" class="nav-link">BAZAR</a></li>
+            <li><a href="#category/didacticos" class="nav-link">DIDÁCTICOS</a></li>
+            <li><a href="#stores" class="nav-link">NUESTRAS TIENDAS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent"></main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p>Central telefónica:</p>
+                <p>996 913 482</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61585151603173" target="_blank" rel="noopener noreferrer" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    
+                    <a href="https://instagram.com/libreria_perzal" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/51986913482?text=Hola%2C%20quisiera%20más%20información" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+            </div>
+            </div>
+            <div class="footer-section">
+                <h3>Acerca de Perzal</h3>
+                <ul>
+                    <li>Quiénes somos</li>
+                    <li>Términos y condiciones</li>
+                    <li>Política de privacidad</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li>Envíos</li>
+                    <li>Devoluciones</li>
+                    <li>Formas de pago</li>
+                    <li>Preguntas frecuentes</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li>Arte y Diseño</li>
+                    <li>Útiles Escolares</li>
+                    <li>Editorial</li>
+                    <li>Didácticos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright © 2025 Distribuidora PERZAL S.A. RUC: 20100030676 - Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Carrito de Compras</h2>
+                <button class="close-modal" id="closeCart">×</button>
+            </div>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                Total: S/ <span id="cartTotal">0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
